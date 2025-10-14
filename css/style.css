@@ -1,0 +1,59 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Page Style */
+body {
+  height: 100vh;
+  background-color: #0d1117;
+  color: #013d72;
+  font-family: "Poppins", "Segoe UI", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Center Content */
+.container {
+  text-align: center;
+}
+
+/* Name Styling */
+.name {
+  font-size: 2.5rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: #58a6ff;
+}
+
+/* Subtitle */
+.subtitle {
+  margin-top: 10px;
+  font-size: 1.1rem;
+  color: #8b949e;
+}
+
+/* Blinking Cursor Animation */
+.cursor {
+  display: inline-block;
+  width: 10px;
+  animation: blink 1s infinite;
+  color: #58a6ff;
+}
+
+@keyframes blink {
+  0%, 50% { opacity: 1; }
+  51%, 100% { opacity: 0; }
+}
+
+/* Footer */
+footer {
+  position: absolute;
+  bottom: 20px;
+  font-size: 0.85rem;
+  color: #8b949e;
+}
