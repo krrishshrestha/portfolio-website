@@ -2,20 +2,375 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Krrish Shrestha</title>
-  <link rel="stylesheet" href="css/style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Krrish Shrestha </title>     <!-- ← CHANGE: your name -->
+  <link rel="stylesheet" href="/css/style.css" />
 </head>
 <body>
-  <div class="container">
-    <h1 class="name">Krrish Shrestha</h1>
-    <p class="subtitle">Website under development<span class="cursor">|</span></p>
+
+<!-- ============================================================
+     NAVIGATION
+     href="#id" values match the section id attributes below.
+     Change the logo text and the link labels as you like.
+============================================================ -->
+<nav>
+
+  <!-- ↓ CHANGE: replace "YN" with your initials or short name -->
+  <a href="#home" class="nav-logo">KS<span>.</span></a>
+
+  <ul class="nav-links">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#work">Work</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+
+  <button class="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+</nav>
+
+<!-- Mobile drawer -->
+<div class="nav-drawer">
+  <a href="#home">Home</a>
+  <a href="#about">About</a>
+  <a href="#work">Work</a>
+  <a href="#experience">Experience</a>
+  <a href="#contact">Contact</a>
+</div>
+
+
+<!-- ============================================================
+     HERO
+============================================================ -->
+<section id="home">
+
+  <div class="hero-text">
+
+    <!-- ↓ CHANGE: your status / availability tag -->
+    <!-- <div class="hero-eyebrow">Available for work · 2025</div> -->
+
+    <!-- ↓ CHANGE: your full name -->
+    <h1 class="hero-name">Krrish Shrestha </h1>
+
+    <!-- Typing animation — the roles are set inside script.js -->
+    <p class="hero-role"><span class="typed"></span><span class="cursor"></span></p>
+
+    <!-- ↓ CHANGE: 2–3 sentence personal intro -->
+    <p class="hero-bio">
+      I am a cybersecurity student and Security Researcher with a strong interest in malware analysis, web security, and threat investigation. I have hands-on experience working with tools such as Burp Suite, Wireshark, and Logpoint SIEM to identify vulnerabilities, analyze network traffic, and investigate security events. I enjoy exploring both offensive and defensive security techniques while continuously improving my skills in Linux, networking, and security research.
+    </p>
+
+    <div class="btn-row">
+      <!-- ↓ CHANGE: update href to your resume PDF or keep as-is -->
+      <a href="#work"    class="btn btn-primary">View My Work</a>
+      <a href="#contact" class="btn btn-ghost">Get In Touch</a>
+    </div>
+
   </div>
 
-  <footer>
-    <p>© 2025 Krrish Shrestha</p>
-  </footer>
 
-  <script src="javascript/script.js"></script>
+  <div class="hero-photo">
+    <div class="photo-card">
+
+      
+      <img src="/resources/images/profile.png" alt="Your Name" />
+      
+
+    </div>
+  </div>
+
+</section>
+
+
+<!-- ============================================================
+     ABOUT
+============================================================ -->
+<section id="about">
+
+  <div class="about-layout">
+
+    <!-- Left column: bio + stats -->
+    <div class="reveal">
+      <p class="label">About</p>
+      <h2 class="section-heading">Who I am</h2>
+      <div class="rule"></div>
+
+      <div class="about-body">
+        <!-- ↓ CHANGE: replace with your actual bio paragraphs -->
+        <p>
+          First paragraph — introduce yourself, your background, and
+          what drew you to the cybersecurity field.
+        </p>
+        <p>
+          Second paragraph — your approach to security work, tools you
+          rely on, certifications you hold (e.g. OSCP, CEH, Security+).
+        </p>
+        <p>
+          Third paragraph — CTF competitions, open-source contributions,
+          or anything else you'd like visitors to know about you.
+        </p>
+      </div>
+
+      <!-- Stats — data-count drives the JS counter animation -->
+      <!-- ↓ CHANGE: update the numbers and labels to match your real stats -->
+      <div class="stats">
+        <div class="stat reveal" data-delay="0">
+          <div class="stat-val" data-count="1" data-suffix="+">1+</div>
+          <div class="stat-lbl">Years Experience</div>
+        </div>
+        <div class="stat reveal" data-delay="80">
+          <div class="stat-val" data-count="10" data-suffix="+">10+</div>
+          <div class="stat-lbl">Projects Done</div>
+        </div>
+        <div class="stat reveal" data-delay="160">
+          <!-- ↓ CHANGE: e.g. CVEs found, bug bounty reports, CTF solves -->
+          <div class="stat-val" data-count="5" data-suffix="+">5+</div>
+          <div class="stat-lbl">CTF Solved</div>
+        </div>
+        <div class="stat reveal" data-delay="240">
+          <div class="stat-val" data-count="5" data-suffix="">5</div>
+          <div class="stat-lbl">Certifications</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right column: skill pills -->
+    <div class="reveal" data-delay="120">
+      <p class="label">Skills</p>
+
+      <!-- ↓ CHANGE: edit category names and pill text to match your skills -->
+
+      <div class="skill-group">
+        <p class="skill-group-name">Offensive Security</p>
+        <div class="pill-row">
+          <span class="pill">Penetration Testing</span>
+          <span class="pill">OWASP Attacks</span>
+          <span class="pill">Metasploit</span>
+          <span class="pill">Burp Suite</span>
+          <span class="pill">Nmap</span>
+          <span class="pill">OSINT</span>
+        </div>
+      </div>
+
+      <div class="skill-group">
+        <p class="skill-group-name">Defensive / Blue Team</p>
+        <div class="pill-row">
+          <span class="pill">SIEM</span>
+          <span class="pill">Malware Analysis</span>
+          <span class="pill">Threat Hunting</span>
+          <span class="pill">Incident Response</span>
+          <span class="pill">Log Analysis</span>
+        </div>
+      </div>
+
+      <div class="skill-group">
+        <p class="skill-group-name">Networking & Programming</p>
+        <div class="pill-row">
+          <span class="pill">Subnetting</span>
+          <span class="pill">Network Design</span>
+          <span class="pill">Network Troubleshoot</span>
+          <span class="pill">Routing & Switching</span>
+          <span class="pill">Python</span>
+          <span class="pill">Bash</span>
+          
+        </div>
+      </div>
+
+      <div class="skill-group">
+        <p class="skill-group-name">Platforms & Tools</p>
+        <div class="pill-row">
+          <span class="pill">Kali Linux</span>
+          <span class="pill">Wireshark</span>
+          <span class="pill">Cisco</span>
+          <span class="pill">AWS Security</span>
+          <span class="pill">Git</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ============================================================
+     WORK / PROJECTS
+============================================================ -->
+<section id="work">
+
+  <p class="label">Work</p>
+  <h2 class="section-heading">Selected Projects</h2>
+  <!-- ↓ CHANGE: optional one-liner about your projects -->
+  <p class="section-sub">A selection of tools, research, and work I'm proud of.</p>
+  <div class="rule"></div>
+
+  <div class="cards">
+
+    <!-- ── PROJECT CARD — copy this block to add more projects ── -->
+
+    <!-- Project 1 -->
+    <div class="card reveal">
+      <p class="card-num">01</p>
+      <!-- ↓ CHANGE: project title -->
+      <h3 class="card-title">The Importance of Integrating Cyber Security into Business Continuity Plans (Research Paper)</h3>
+      <!-- ↓ CHANGE: 2–3 sentence description -->
+      <p class="card-desc">
+        This project explores how Business Continuity Planning (BCP) helps organizations maintain operations during cyber disruptions. Effectiveness cybersecurity trends and BCP frameworks were researched and analyzed.
+      </p>
+      <div class="card-footer">
+        <!-- ↓ CHANGE: tech stack or category tags -->
+        <div class="tag-row">
+          <span class="tag">Security</span>
+          <span class="tag">BCP</span>
+        </div>
+        <!-- ↓ CHANGE: link to GitHub repo, live demo, or writeup -->
+        <a href="https://www.researchgate.net/publication/399563238_The_Importance_of_Integrating_Cyber_Security_into_Business_Continuity_Plans" target="_blank" class="card-link">View →</a>
+      </div>
+    </div>
+
+    <!-- Project 2 -->
+    <div class="card reveal" data-delay="80">
+      <p class="card-num">02</p>
+      <h3 class="card-title">Malware Analysis Fundamentals (Research / Analysis)</h3>
+      <p class="card-desc">
+        This project covers the core concepts of Malware Analysis for beginners as well as professionals. The report also consists of a section where live analysis of major malwares like Rhysida, Lockbit, & Agent Tesla is carried out.
+      </p>
+      <div class="card-footer">
+        <div class="tag-row">
+          <span class="tag">Virtualization</span>
+          <span class="tag">Forensics</span>
+        </div>
+        <a href="#" class="card-link">View →</a>
+      </div>
+    </div>
+
+    <!-- Project 3 -->
+    <div class="card reveal" data-delay="160">
+      <p class="card-num">03</p>
+      <h3 class="card-title">Capital One Data Breach - Case Study</h3>
+      <p class="card-desc">
+        This project covers the overall description of the data breach that took place in Capital One. The case study covers the timeline of major incidents and the cause behind them.
+      </p>
+      <div class="card-footer">
+        <div class="tag-row">
+          <span class="tag">Research</span>
+          <span class="tag">Security</span>
+        </div>
+        <a href="#" class="card-link">View →</a>
+      </div>
+    </div>
+
+    <!-- Add more project cards by copying the block above -->
+
+  </div>
+
+</section>
+
+
+<!-- ============================================================
+     EXPERIENCE
+============================================================ -->
+<section id="experience">
+
+  <p class="label">Experience</p>
+  <h2 class="section-heading">Where I've Worked</h2>
+  <div class="rule"></div>
+
+  <div class="timeline">
+
+    <!-- ── TIMELINE ITEM — most recent first ── -->
+    <!-- Copy this block to add more entries -->
+
+    <!-- Job 1 (most recent) -->
+    <div class="t-item reveal">
+      <div class="t-dot"></div>
+      <!-- ↓ CHANGE: date range -->
+      <p class="t-period">2025 (December) — Present</p>
+      <!-- ↓ CHANGE: your job title -->
+      <h3 class="t-title">Teaching Assistant</h3>
+      <!-- ↓ CHANGE: company name and employment type -->
+      <p class="t-company">Islington College Kathmandu· Full-time</p>
+      <!-- ↓ CHANGE: responsibilities and achievements -->
+      <p class="t-desc">
+        <!-- What you did, the impact you made, tools and techniques used, and
+        any measurable results (e.g. reduced response time by X%, found N
+        critical vulnerabilities). -->
+      </p>
+    </div>
+
+    <!-- Job 2 -->
+    <div class="t-item reveal" data-delay="80">
+      <div class="t-dot"></div>
+      <p class="t-period">2025 (July) — 2025 (December)</p>
+      <h3 class="t-title">Security Analyst Intern</h3>
+      <p class="t-company">Monal Tech Pvt Ltd · Internship</p>
+      <p class="t-desc">
+        <!-- Responsibilities and notable achievements in this role. -->
+      </p>
+    </div>
+
+    <!-- Job 3 / Internship -->
+    <div class="t-item reveal" data-delay="160">
+      <div class="t-dot"></div>
+      <p class="t-period">2024 (February) — 2024 (July)</p>
+      <h3 class="t-title">Customer Service Representative Intern</h3>
+      <p class="t-company">ING Skill Academy · Internship</p>
+      <p class="t-desc">
+        <!-- Responsibilities and what you learned during this role. -->
+      </p>
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ============================================================
+     CONTACT
+============================================================ -->
+<section id="contact">
+
+  <p class="label">Contact</p>
+  <h2 class="section-heading">Let's Connect</h2>
+  <div class="rule"></div>
+
+  <!-- ↓ CHANGE: your contact message -->
+  <p class="section-sub">
+    Open to work opportunities, collaborations, or just a conversation
+    about tech. Drop me a line.
+  </p>
+
+  <!-- ↓ CHANGE: both instances of "your@email.com" -->
+  <a href="mailto:krrishshrestha0708@gmail.com" class="contact-email">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 7 10-7"/></svg>
+    krrishshrestha0708@gmail.com
+  </a>
+
+  <!-- ↓ CHANGE: replace # with your actual profile URLs -->
+  <div class="socials">
+    <a href="https://github.com/krrishshrestha"       class="social" target="_blank">GitHub</a>
+    <a href="https://www.linkedin.com/in/krrish-shrestha-649768277/"  class="social" target="_blank">LinkedIn</a>
+    <a href="https://tryhackme.com/p/krrishshrestha07"  class="social" target="_blank">TryHackMe</a>
+    <!-- ↓ Add or remove social links as needed -->
+    <!-- <a href="#" class="social" target="_blank">HackTheBox</a> -->
+    <!-- <a href="#" class="social" target="_blank">Twitter</a>    -->
+  </div>
+
+</section>
+
+
+<!-- ============================================================
+     FOOTER
+============================================================ -->
+<footer>
+  <!-- ↓ CHANGE: your name -->
+  <span>© 2025 Krrish Shrestha</span>
+  <span>Cybersecurity Portfolio</span>
+</footer>
+
+<!-- Back-to-top button -->
+<button id="top-btn" aria-label="Back to top">↑</button>
+
+<script src="/javascript/script.js"></script>
 </body>
 </html>
