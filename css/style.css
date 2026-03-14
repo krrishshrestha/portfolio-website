@@ -1,3 +1,9 @@
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  src: url('../css/fonts/Plus_Jakarta_Sans/PlusJakartaSans-VariableFont_wght.ttf') format('ttf');
+  font-weight: 300; font-display: swap;
+}
+
 /* ================================================================
    style.css
    Theme  : Deep Navy — clean, professional, cybersecurity
@@ -5,7 +11,7 @@
    Accent : Teal #2DD4BF
    ================================================================ */
 
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap');
+
 
 /* ── Variables ───────────────────────────────────────────────── */
 :root {
